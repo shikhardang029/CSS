@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        .overlay {
+            opacity: 1;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: -999;
+            background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB, #23D);
+            background-size: 400% 400%;
+            animation: colorAni 42s ease infinite alternate;
+            
+
+        }
+
+        @keyframes colorAni {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 50% 100%;
+            }
+        }
+
+        img {
+            animation: beat 1s infinite;
+            animation-direction: alternate;
+            /* or absolute */
+            height: 250px;
+            left: 50%;
+            margin-top: -125px;
+            margin-left: -125px;
+            position:absolute;
+            top: 50%;
+            width: 250px;
+        }
+
+        @keyframes beat {
+            0% {
+                transform: scale(0.5);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+    <title>Gradient transform</title>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <span><img src="heart.png" width="20%" alt="" srcset=""></span>
+</body>
+
+</html>

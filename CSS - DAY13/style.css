@@ -1,0 +1,18 @@
+    @import url("style2.css");
+    p {
+        border-style: solid;
+        height: 200px;
+        display: block;
+        background-color: #0000FF;
+        -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+        transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+        color: white;
+    }
+    
+    p:hover {
+        background-color: #FFCCCC;
+        width: 500px;
+        height: 500px;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }

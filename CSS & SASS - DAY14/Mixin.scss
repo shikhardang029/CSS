@@ -1,0 +1,22 @@
+/* sass --watch test.scss:style.css */
+/* Mixins*/
+/*It is used to reuse the code using include*/
+@mixin important-text {
+    color: red;
+    font-weight: bolder;
+    font-size: 50px; 
+}
+.danger {
+    @include important-text;
+}
+
+/* Paasing variable to a MIXIN*/
+@mixin bordered($width, $color) {
+    border: $width solid $color;
+}
+.myClass {
+    @include bordered(blue,2px);
+}
+.myNotes {
+    @include bordered(red,1px);
+}

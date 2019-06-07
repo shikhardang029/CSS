@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* #hello {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            border-width: 3px;
+            border-style: groove ridge solid dotted;
+            border-radius: 50vw 90vw 40vw 0;
+            border-color: aqua greenyellow blueviolet purple;
+            vertical-align: bottom;
+        }
+
+        #advance {
+            border-width: 0 10px;
+            border-style: double;
+            border-color: darkturquoise darkgoldenrod;
+            border-radius: 60px 40px 60px 40px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #leaf {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            border-width: 3px;
+            border-style: groove ridge solid dotted;
+            border-radius: 50vw 90vw 40vw 0;
+            border-color: aqua greenyellow blueviolet purple;
+            vertical-align: bottom;
+            border-color: aqua greenyellow;
+            border-radius: 0 120px 0px 120px;
+            border-width: 1px 22px;
+        }
+
+        #box {
+            border-color: chartreuse;
+            border-radius: 0px;
+            border-width: 0.5px;
+            border-style: solid;
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #box:hover {
+            border-color: blue;
+            border-radius: 2px;
+            border-width: 5px;
+            border-style: solid;
+            -webkit-box-shadow: 11px 11px 19px -1px rgba(158, 63, 158, 1);
+            -moz-box-shadow: 11px 11px 19px -1px rgba(158, 63, 158, 1);
+            box-shadow: 11px 11px 19px -1px rgba(158, 63, 158, 1);
+            transition: all 3s;
+            transform: scale(5); 
+        }
+            
+        */
+
+        #button {
+            width: 60px;
+            height: 20px;
+            background: black;
+            text-align: center;
+            color: aqua;
+            box-shadow: 0;
+            border: 0px solid black;
+            transition: all 1s 0.5s ease-in-out;
+            font-size: 10px;
+            display: table-cell;
+            vertical-align: middle;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            cursor: pointer;
+            animation: fade 1s;
+        }
+
+        #button:hover,
+        #button:focus {
+            background-color: aqua;
+            color: black;
+            box-shadow: 2px 2px 9px -1px rgba(158, 63, 158, 1);
+            border: 1px solid springgreen;
+        }
+
+        #underline {
+            content: "";
+            border-bottom: 1px solid;
+            width: 0px;
+            cursor: pointer;
+            transition: width 2s;
+
+        }
+        #underline:hover {
+            border-bottom: 1px solid;
+            width: 40px;
+        }
+        #cover {
+            display: block;
+            background: aquamarine;
+            border: 1px solid blue;
+            border-radius: 5px; 
+            width: 94%;
+            transition: background 3s
+        }
+        #cover:hover {
+            background: pink;
+        }
+
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+        #content {
+          column-count: 3;  
+        }
+    </style>
+    <title>Border</title>
+</head>
+
+<body>
+    <!--     <div id="hello">Hello</div>
+    <div id="advance">Hello</div>
+    <div id=leaf>leaf</div>
+    <div id="box">Hover</div> -->
+
+    <div id="button">hover</div>
+    <div id="underline">Word</div>
+    <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi recusandae corrupti voluptate minus porro architecto! Sit quo similique architecto aspernatur nesciunt nam nostrum laudantium illum consectetur rem! Eos, dolore.</p>
+    <div id="cover">Progress bar</div>
+</body>
+
+</html>

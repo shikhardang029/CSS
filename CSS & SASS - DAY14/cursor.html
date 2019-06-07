@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cursor</title>
+    <style>
+        @import url('font.css');
+        div {
+            display: block;
+            border: 2px solid aquamarine;
+            padding: 3rem;
+            margin-bottom: 20px;
+            width: fit-content;
+            transition: all 1.3s;
+            font-family: 'Zenzai Itache Regular';
+            color: antiquewhite;
+            font-size: 4rem;
+            background: rgb(0, 0, 0)
+        }
+
+        div:hover {
+            transform: scale(1.2);
+            color: crimson;
+            background-color: aqua;
+        }
+
+        a {
+            cursor: url('abc.gif');
+        }
+    </style>
+</head>
+
+<body bgcolor="black">
+    <div style="cursor: auto">Auto</div>
+    <div style="cursor: crosshair">crosshair</div>
+    <div style="cursor: default">default</div>
+    <div style="cursor: pointer">pointer</div>
+    <div style="cursor: move">move</div>
+    <div style="cursor: e-resize">e-resize</div>
+    <div style="cursor: ne-resize">ne-resize</div>
+    <div style="cursor: nw-resize">nw-resize</div>
+    <div style="cursor: n-resize">n-resize</div>
+    <div style="cursor: se-resize">se-resize</div>
+    <div style="cursor: sw-resize">sw-resize</div>
+    <div style="cursor: s-resize">s-resize</div>
+    <div style="cursor: w-resize">w-resize</div>
+    <div style="cursor: text">text</div>
+    <div style="cursor: wait">wait</div>
+    <div style="cursor: zoom-in">zoom-in</div>
+    <div style="cursor: zoom-out">zoom-out</div>
+    <div style="cursor: progress">progress</div>
+    <div style="cursor: copy">copy</div>
+    <div style="cursor: cell">cell</div>
+    <div style="cursor: none">none</div>
+    <div style="cursor: not-allowed">not-allowed</div>
+    <div style="cursor: alias">alias</div>
+    <div style="cursor: vertical-text">vertical-text</div>
+    <a href="#">Cursor</a>
+</body>
+
+</html>
